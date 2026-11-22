@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishGuard | Intelligent Phishing Detection</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-gradient"></div>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>PhishGuard</span>
+            </div>
+            <p class="tagline">Real-time AI protection against malicious websites</p>
+        </header>
+
+        <main>
+            <div class="search-box">
+                <input type="text" id="urlInput" placeholder="Enter website URL to scan..." autocomplete="off">
+                <button id="scanBtn">
+                    <span class="btn-text">Scan Now</span>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <div id="resultContainer" class="result-container hidden">
+                <div class="loader hidden" id="loader"></div>
+
+                <div id="resultContent" class="result-content hidden">
+                    <div class="status-icon" id="statusIcon"></div>
+                    <h2 id="statusText"></h2>
+                    <div id="safetyMessage" class="safety-message"></div>
+                    <p id="statusDescription"></p>
+
+                    <div class="metrics">
+                        <div class="metric-item">
+                            <span class="label">Confidence Score</span>
+                            <span class="value" id="confidenceScore">0%</span>
+                            <div class="progress-bar">
+                                <div class="progress" id="confidenceBar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 PhishGuard AI. Powered by Machine Learning.</p>
+            <p>by Deeksha</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
