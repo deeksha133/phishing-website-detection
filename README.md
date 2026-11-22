@@ -65,4 +65,4 @@ Open `frontend/index.html` in your browser.
 To develop a machine learning-based solution that helps identify phishing websites and improve awareness of malicious URLs.
 
 ## Author
-Diksha
+Deeksha T M
