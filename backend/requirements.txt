@@ -6,3 +6,5 @@ requests
 beautifulsoup4
 joblib
 xgboost
+flask-cors
+gunicorn
